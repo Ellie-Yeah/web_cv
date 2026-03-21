@@ -27,6 +27,19 @@
     <div class='light x8'></div>
     <div class='light x9'></div>
 
+<header>    
+    <div class="dropdown">
+        <button class="menu_button" onclick="toggleDropdown()">Menu</button>
+        <div id="dropdown-content" class="dropdown-content">
+            <a href="competencias.html">Competências</a>
+            <a href="experiencia.html">Experiência</a>
+            <a href="formacao.html">Formação</a>
+            <a href="contactos.html">Contactos</a>
+        </div>
+    </div>
+</header>
+
+<div id="backdrop" class="backdrop" onclick="toggleDropdown()"></div>
 
     <div class="profile_photo"> <img src="" alt="Foto de Perfil"> </div>
 
@@ -74,6 +87,20 @@
     <footer>
         <p>© 2026 Elisabete Farinha. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-content");
+            var backdrop = document.getElementById("backdrop");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+                backdrop.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+                backdrop.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

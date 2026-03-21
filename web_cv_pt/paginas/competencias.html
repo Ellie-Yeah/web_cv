@@ -15,6 +15,53 @@
 </head>
 
 <body>
+    <!-- Light animation inspired by https://codepen.io/aaroniker/pen/KKVZzjP -->
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
 
+
+    <header>    
+    <div class="dropdown">
+        <button class="menu_button" onclick="toggleDropdown()">Menu</button>
+        <div id="dropdown-content" class="dropdown-content">
+            <a href="apresentacao.html">Competências</a>
+            <a href="experiencia.html">Experiência</a>
+            <a href="formacao.html">Formação</a>
+            <a href="contactos.html">Contactos</a>
+        </div>
+    </div>
+</header>
+
+
+<h2>Competências</h2>
+
+<div class="lista_competencias">
+    
+    
+    </div>
+
+
+
+     <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-content");
+            var backdrop = document.getElementById("backdrop");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+                backdrop.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+                backdrop.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 </html>
