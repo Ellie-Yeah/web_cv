@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>EFF WebCV - Skills</title>
-    <link rel="stylesheet" href="../styles/skills_styles.css">
+    <link rel="stylesheet" href="../../estilos/competencias_estilos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varta:wght@300..700&display=swap">
     <style>
         body {
@@ -15,6 +15,108 @@
 </head>
 
 <body>
+    <!-- Light animation inspired by https://codepen.io/aaroniker/pen/KKVZzjP -->
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
 
+    <!-- Dropdown inspired by https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+    <header>
+        <div class="dropdown">
+            <button class="menu_button" onclick="toggleDropdown()">Menu</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <a href="pitch.html">Introduction</a>
+                <a href="exper.html">Experience</a>
+                <a href="educ.html">Education</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- blur quando o dropdown está aberto -->
+    <div id="backdrop" class="backdrop" onclick="toggleDropdown()"></div>
+
+
+
+    <h2>Skills</h2>
+
+    <div class="lista_competencias">
+        <ul>
+
+            <li class="subtitulos">Personal Skills (Soft skills)</li>
+            <ul class="sublista">
+                <li>Good Communication Skills</li>
+                <li>Organization</li>
+                <li>Versatility</li>
+                <li>Attention to Detail</li>
+                <li>Proactivity</li>
+                <li>Analytical Thinking</li>
+                <li>Creativity</li>
+                <li>Problem Solving</li>
+                <li>Empathy</li>
+            </ul>
+
+            <li class="subtitulos">Languages</li>
+            <ul class="sublista">
+                <li><a href="https://cert.efset.org/wjqfbR" target="_blank">English (Proficient - Level C2)</a></li>
+                <li>Spanish (Intermediate - Level B1)</li>
+                <li>German (Basic - Level A1)</li>
+                <li>French (Basic - Level A1)</li>
+            </ul>
+
+            <li class="subtitulos">Technical Skills</li>
+            <ul class="sublista">
+                <li>Microsoft Office Suite</li>
+                <li>LibreOffice Suite</li>
+                <br>
+                <li>WinRest2014</li>
+                <li>Host</li>
+                <br>
+                <li>Adobe Photoshop & Illustrator</li>
+                <li>GIMP & Darktable</li>
+                <li>Canva & Capcut</li>
+                <li>Davinci Resolve</li>
+                <br>
+                <li>Figma</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MongoDB</li>
+                <li>SQL</li>
+                <li>React</li>
+                <li>Next</li>
+                <li>NodeJS</li>
+            </ul>
+
+        </ul>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 Elisabete Farinha. All rights reserved.</p>
+    </footer>
+
+    <!-- script em JS para fazer o dropdown funcionar, e quando activado, todo o conteudo da pagina fica desfocado, dando o destaque as opcoes do dropdown  -->
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-content");
+            var backdrop = document.getElementById("backdrop");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+                backdrop.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+                backdrop.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 </html>

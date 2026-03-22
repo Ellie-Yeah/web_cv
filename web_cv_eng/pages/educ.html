@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>EFF WebCV - Education</title>
-    <link rel="stylesheet" href="../styles/educ_styles.css">
+    <link rel="stylesheet" href="../../estilos/formacao_estilos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varta:wght@300..700&display=swap">
     <style>
         body {
@@ -16,5 +16,154 @@
 
 <body>
 
+    <!-- Light animation inspired by https://codepen.io/aaroniker/pen/KKVZzjP -->
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+
+    <!-- Dropdown inspired by https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+    <header>
+        <div class="dropdown">
+            <button class="menu_button" onclick="toggleDropdown()">Menu</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <a href="pitch.html">Introduction</a>
+                <a href="skills.html">Skills</a>
+                <a href="exper.html">Experience</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- blur quando o dropdown está aberto -->
+    <div id="backdrop" class="backdrop" onclick="toggleDropdown()"></div>
+
+    <h2>Education</h2>
+
+    <div class="lista_formacao">
+        <ul>
+            <li class="subtitulos">Education</li>
+            <dt class="data">2025</dt>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/certifications/1774177015489/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao" target="_blank">Junior Fullstack Developer</a>
+                <p class="local">Mem-Martins</p>
+                <p class="entidade">Bytes 4 Future e Run Code School</p>
+            </dd>
+            <dt class="data">2020 - 2022</dt>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/certifications/1774177105520/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao" target="_blank">Técnica de Comunicação - Marketing,
+                    Relações Públicas e Publicidade</a>
+                <p class="local">Online</p>
+                <p class="entidade">IEFP - Instituto do Emprego e Formação Profissional</p>
+            </dd>
+            <dt class="data">2014 - 2017</dt>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/education/1774176765758/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao" target="_blank">Licenciatura em Direcção e Gestão
+                    Hoteleira</a>
+                <p class="local">Estorial</p>
+                <p class="entidade">ESHTE – Escola Superior de Hotelaria e Turismo do Estoril</p>
+            </dd>
+
+
+
+            <li class="subtitulos">Complementary Education & Training</li>
+            <dt class="data">2025</dt>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/certifications/1774177052083/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao" target="_blank">Metodologias Ágeis (8 horas)</a>
+                <p class="local">Online</p>
+                <p class="entidade">Recode e CDI Portugal</p>
+            </dd>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/certifications/1774177071948/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao" target="_blank">DevOps (5 horas)</a>
+                <p class="local">Online</p>
+                <p class="entidade">Recode e CDI Portugal</p>
+            </dd>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/certifications/1774176885707/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao">Redes Sociais (6 horas)</a>
+                <p class="local">Online</p>
+                <p class="entidade">Recode e CDI Portugal</p>
+            </dd>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/certifications/1774176817538/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao" target="_blank">Inteligência Emocional (20 horas)</a>
+                <p class="local">Online</p>
+                <p class="entidade">Recode e CDI Portugal</p>
+            </dd>
+            <dd>
+                <a href="https://lms.nau.edu.pt/certificates/d9741191fefa4836a906ce3c43bd0c42" class="descricao"
+                    target="_blank">Gestão de vendas (2 horas)</a>
+                <p class="local">Online</p>
+                <p class="entidade">Plataforma NAU e Accenture</p>
+            </dd>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/certifications/1767720607630/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao" target="_blank">Ferramentas de Gestão (20 horas)</a>
+                <p class="local">Online</p>
+                <p class="entidade">Recode e CDI Portugal</p>
+            </dd>
+            <dt class="data">2024</dt>
+            <dd>
+                <p class="descricao">Segurança Contra Incêndios em Edifícios
+                    (8 horas)</p>
+                <p class="local">Mem-Martins</p>
+                <p class="entidade">ISJD - Casa de Saúde do Telhal
+                </p>
+            </dd>
+            <dt class="data">2022</dt>
+            <dd>
+                <a href="https://www.linkedin.com/in/elisabete-f/details/certifications/1774178301869/single-media-viewer/?profileId=ACoAACWK2eMBX1VbL1L8Hu2zLGLHxrBh2Z-1wPM"
+                    class="descricao" target="_blank">Marketing Digital</a>
+                <p class="local">Online</p>
+                <p class="entidade">Goolgle Atelier Digital</p>
+            </dd>
+            <dt class="data">2019</dt>
+            <dd>
+                <p class="descricao">Sensibilização em Combate a Incêndios e
+                    Evacuação de Edifícios (7 horas)</p>
+                <p class="local">Sintra</p>
+                <p class="entidade">ENB – Escola Nacional de Bombeiros</p>
+            </dd>
+            <dt class="data">2013 - 2014</dt>
+            <dd>
+                <p class="descricao">Formação Modular CNQ: Criação do Próprio
+                    Emprego</p>
+                <p class="local">Sintra</p>
+                <p class="entidade">IEFP - Instituto do Emprego e Formação Profissional
+                </p>
+            </dd>
+        </ul>
+    </div>
+
+
+    <footer>
+        <p>© 2026 Elisabete Farinha. All rights reserved.</p>
+    </footer>
+
+    <!-- script em JS para fazer o dropdown funcionar, e quando activado, todo o conteudo da pagina fica desfocado, dando o destaque as opcoes do dropdown  -->
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-content");
+            var backdrop = document.getElementById("backdrop");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+                backdrop.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+                backdrop.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 </html>

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>EFF WebCV - Pitch</title>
-    <link rel="stylesheet" href="../styles/pitch_styles.css">
+    <title>EFF WebCV - Introduction</title>
+    <link rel="stylesheet" href="../../estilos/apresentacao_estilos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varta:wght@300..700&display=swap">
     <style>
         body {
@@ -16,5 +16,101 @@
 
 <body>
 
+    <!-- Light animation inspired by https://codepen.io/aaroniker/pen/KKVZzjP -->
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+
+    <!-- Dropdown inspired by https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+    <header>
+        <div class="dropdown">
+            <button class="menu_button" onclick="toggleDropdown()">Menu</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <a href="skills.html">Skills</a>
+                <a href="exper.html">Experience</a>
+                <a href="educ.html">Education</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- blur quando o dropdown está aberto -->
+    <div id="backdrop" class="backdrop" onclick="toggleDropdown()"></div>
+
+    <div class="profile_photo"> <img src="" alt="Foto de Perfil"> </div>
+
+    <div class="my_pitch">
+        <h2>O que têm em comum: um restaurante, um hotel, um punhado de empreendedores e uma casa de saúde mental?</h2>
+        <br>
+        <p>
+            Assim de repente, nada...
+            <br>
+            <br>
+            Mas se virmos bem, em todos eles há uma pessoa que tem um problema e precisa de ajuda a resolvê-lo.
+            <br>
+            <br>
+            <br>
+            Desde que comecei a trabalhar, uma das coisas que me dá mais satisfação é ver uma pessoa feliz depois de a
+            ter ajudado.
+        </p>
+        <br>
+        <ul>
+            <li>Seja simplesmente com um serviço, rápido, eficaz e simpático à mesa.</li>
+            <li>Observando atentamente e indo um pouco mais além, superando as expectativas que as pessoas tinham para a
+                sua estadia.</li>
+            <li>Seja criando métodos de trabalho que facilitem e ajudem no trabalho da equipa.</li>
+            <li>Ou usando a criatividade para criar algo único que atraia a atenção de potenciais clientes.</li>
+            <li>Gerindo a presença online de um empreendedor para que este possa focar-se no seu negócio.</li>
+            <li>Ou seja cuidando daqueles que mais precisam, ensinando pacientemente competências úteis para o seu
+                futuro.</li>
+        </ul>
+        <br>
+        <p>
+            Eu sou assim, uma pessoa focada no cliente, que trabalha empenhadamente em providenciar o melhor serviço,
+            seguindo os padrões de qualidade, e
+            sempre procurando melhorar continuamente.<br>
+            Uso a minha empatia para me colocar no lugar da outra pessoa, compreendendo melhor os seus problemas e assim
+            encontrar as melhores soluções para os resolver, ou agir para evitar que os problemas possam surgir.<br>
+            E quando não sei alguma coisa... Não tenho qualquer problema em pesquisar e estudar mais, ou perguntar a
+            alguém mais experiente, para saber
+            como ultrapassar um determinado obstáculo.
+            <br>
+            <br>
+            Procuro uma nova oportunidade onde possa usar as minhas competências e experiência para ajudar os outros, e
+            onde possa
+            continuar a
+            aprender e crescer como profissional.
+        </p>
+    </div>
+
+    <div class="contact_me_button">
+        <button class="contact_me_button" onclick="window.location.href='/web_cv_eng/pages/contacts.html'"> Hi, I'm Elisabete, how can I help you? </button>
+    </div>
+
+    <footer>
+        <p>© 2026 Elisabete Farinha. All rights reserved.</p>
+    </footer>
+
+    <!-- script em JS para fazer o dropdown funcionar, e quando activado, todo o conteudo da pagina fica desfocado, dando o destaque as opcoes do dropdown  -->
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-content");
+            var backdrop = document.getElementById("backdrop");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+                backdrop.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+                backdrop.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 </html>
