@@ -17,7 +17,7 @@
 <body>
 
 
-     <!-- Light animation inspired by https://codepen.io/aaroniker/pen/KKVZzjP -->
+    <!-- Light animation inspired by https://codepen.io/aaroniker/pen/KKVZzjP -->
     <div class='light x1'></div>
     <div class='light x2'></div>
     <div class='light x3'></div>
@@ -28,24 +28,32 @@
     <div class='light x8'></div>
     <div class='light x9'></div>
 
-<header>    
-    <div class="dropdown">
-        <button class="menu_button" onclick="toggleDropdown()">Menu</button>
-        <div id="dropdown-content" class="dropdown-content">
-            <a href="apresentacao.html">Contactos</a>
-            <a href="competencias.html">Competências</a>
-            <a href="experiencia.html">Experiência</a>
-            <a href="formacao.html">Formação</a>
-            
+    <!-- Dropdown inspired by https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+    <header>
+        <div class="dropdown">
+            <button class="menu_button" onclick="toggleDropdown()">Menu</button>
+            <div id="dropdown-content" class="dropdown-content">
+                <a href="apresentacao.html">Contactos</a>
+                <a href="competencias.html">Competências</a>
+                <a href="experiencia.html">Experiência</a>
+                <a href="formacao.html">Formação</a>
+
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+
+    <!-- blur quando o dropdown está aberto -->
+    <div id="backdrop" class="backdrop" onclick="toggleDropdown()"></div>
+
+    <div></div>
 
 
+    <footer>
+        <p>© 2026 Elisabete Farinha. All rights reserved.</p>
+    </footer>
 
-
-
-     <script>
+    <!-- script em JS para fazer o dropdown funcionar, e quando activado, todo o conteudo da pagina fica desfocado, dando o destaque as opcoes do dropdown  -->
+    <script>
         function toggleDropdown() {
             var dropdown = document.getElementById("dropdown-content");
             var backdrop = document.getElementById("backdrop");
@@ -59,4 +67,5 @@
         }
     </script>
 </body>
+
 </html>
