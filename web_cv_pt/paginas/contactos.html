@@ -45,7 +45,35 @@
     <!-- blur quando o dropdown está aberto -->
     <div id="backdrop" class="backdrop" onclick="toggleDropdown()"></div>
 
-    <div></div>
+
+
+    <h2>Contactos</h2>
+
+    <div class="formulario">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c31581a1-d037-41c3-805d-fb67b6fb1947">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required />
+            <br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required />
+            <br>
+
+            <label for="subject">Assunto:</label>
+            <br>
+            <input type="text" id="subject" name="subject" />
+            <br>
+
+            <label for="message">Mensagem:</label>
+            <br>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
 
 
     <footer>
