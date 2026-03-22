@@ -144,14 +144,17 @@ h2 {
 dd {
     padding-left: 40px;
 }
-.local{
+
+.local {
     font-style: italic;
     font-size: small;
 }
+
 .entidade {
     font-size: smaller;
     margin-bottom: 15px;
 }
+
 a {
     color: white;
     text-decoration: underline;
