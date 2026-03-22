@@ -145,7 +145,10 @@ li {
     padding-left: 40px;
 }
 
-
+a {
+    color: white;
+    text-decoration: underline;
+}
 
 footer {
     grid-row: footer;
