@@ -118,7 +118,7 @@ header {
     min-height: 120px;
     border-radius: 50%;
     border: 2px solid white;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     overflow: hidden;
     display: grid;
     place-items: center;
